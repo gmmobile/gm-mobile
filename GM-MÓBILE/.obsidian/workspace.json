@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "64a7ac82578e20c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "9dbf2e30b8c9d554",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d005c1fa40790da3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bem-vindo.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Bem-vindo"
+            }
+          }
+        ]
+      },
+      {
+        "id": "2500ba10a5974def",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23d0a207486705fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📝 Histórico de Alterações.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📝 Histórico de Alterações"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1f1c179826ddff24",
+    "type": "split",
+    "children": [
+      {
+        "id": "a67ec3b4dd762852",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "44f050bfdacbe2db",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "516de52926c0d74c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "0a506cc70ea6877c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "31e1b46e20f181bb",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5afc5e3bb6196e6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "456552ccb844c4e1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "📝 Histórico de Alterações.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para 📝 Histórico de Alterações"
+            }
+          },
+          {
+            "id": "9ba4c2684fb75451",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "📝 Histórico de Alterações.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para 📝 Histórico de Alterações"
+            }
+          },
+          {
+            "id": "b519831c7ec9ddaa",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "7d91578897bf6e65",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "e2c0b1c75fc1847e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "📝 Histórico de Alterações.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de 📝 Histórico de Alterações"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "23d0a207486705fd",
+  "lastOpenFiles": [
+    "Bem-vindo.md",
+    "📝 Histórico de Alterações.md.tmp.18784.6d72485cbee4",
+    "📝 Histórico de Alterações.md.tmp.18784.420d7414f5bb",
+    "📝 Histórico de Alterações.md.tmp.18784.5049450a05e9",
+    "📝 Histórico de Alterações.md",
+    "📋 Conteúdo e Textos.md",
+    "📋 Conteúdo e Textos.md.tmp.18784.b943532fea8f",
+    "🤝 Parceiros.md",
+    "🔧 Tecnologias do Site.md",
+    "🎨 Identidade Visual.md",
+    "📁 Site — Estrutura e Páginas.md",
+    "🏠 GM Móbile — Visão Geral.md"
+  ]
+}

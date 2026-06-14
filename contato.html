@@ -1,0 +1,529 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | GM Móbile — Solicite seu Orçamento</title>
+  <meta name="description" content="Entre em contato com a GM Móbile. Solicite um orçamento gratuito para seu projeto de móveis planejados em Mogi das Cruzes, SP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260613">
+  <style>
+    /* ── Contato mobile overrides ── */
+
+    /* Contact info intro text */
+    @media (max-width: 640px) {
+      .contact-info > .fade-in h2 { font-size: 1.25rem !important; }
+      .contact-info > .fade-in p  { font-size: 0.8rem !important; margin-bottom: 18px !important; }
+
+      /* Cards: 2-column grid inside contact-info */
+      .contact-info {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 10px !important;
+      }
+      .contact-info > .fade-in:first-child { grid-column: 1 / -1; }
+      .contact-card { align-items: flex-start; }
+    }
+
+    /* Map: shorter on mobile */
+    @media (max-width: 768px) {
+      .map-box { height: 260px !important; margin-top: 36px !important; }
+    }
+    @media (max-width: 480px) {
+      .map-box { height: 190px !important; margin-top: 24px !important; }
+    }
+
+    /* FAQ accordion: reduce inline padding */
+    @media (max-width: 640px) {
+      details summary {
+        padding: 16px 18px !important;
+        font-size: 0.88rem !important;
+      }
+      details > div {
+        padding: 0 18px 16px !important;
+        font-size: 0.84rem !important;
+        line-height: 1.65 !important;
+      }
+    }
+    @media (max-width: 480px) {
+      details summary {
+        padding: 14px 14px !important;
+        font-size: 0.82rem !important;
+      }
+      details > div {
+        padding: 0 14px 14px !important;
+        font-size: 0.8rem !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="GM Móbile" class="nav-logo-img">
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">GM MÓBILE</span>
+          <span class="nav-logo-sub">Planejados</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Início</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+        <li><a href="projetos.html" class="nav-link">Projetos</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="parceiros.html" class="nav-link">Parceiros</a></li>
+        <li><a href="materiais.html" class="nav-link">Materiais</a></li>
+        <li><a href="contato.html" class="nav-link active">Contato</a></li>
+      </ul>
+      <a href="https://wa.me/5511934431311" target="_blank" class="nav-cta">Orçamento Grátis</a>
+      <button class="nav-menu-btn"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<!-- MOBILE NAV BACKDROP -->
+<div class="mobile-nav-backdrop"></div>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-brand">
+      <img src="images/logo.png" alt="GM Móbile" class="mobile-nav-logo-img">
+      <div>
+        <div class="mobile-nav-brand-name">GM MÓBILE</div>
+        <div class="mobile-nav-brand-sub">Móveis Planejados</div>
+      </div>
+    </a>
+    <button class="mobile-nav-close" aria-label="Fechar menu">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="1" y1="1" x2="13" y2="13"/><line x1="13" y1="1" x2="1" y2="13"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav-links">
+    <a href="index.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">01</span>
+      <span class="mobile-nav-text">Início</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <a href="sobre.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">02</span>
+      <span class="mobile-nav-text">Sobre Nós</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <a href="projetos.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">03</span>
+      <span class="mobile-nav-text">Projetos</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <a href="blog.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">04</span>
+      <span class="mobile-nav-text">Blog</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <a href="parceiros.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">05</span>
+      <span class="mobile-nav-text">Parceiros</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <a href="materiais.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">06</span>
+      <span class="mobile-nav-text">Materiais</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <a href="contato.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">07</span>
+      <span class="mobile-nav-text">Contato</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+  </nav>
+  <div class="mobile-nav-footer">
+    <div class="mobile-nav-contact">
+      <div class="mobile-nav-contact-item">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Mogi das Cruzes, SP
+      </div>
+      <div class="mobile-nav-contact-item">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        (11) 93443-1311
+      </div>
+    </div>
+    <a href="https://wa.me/5511934431311" target="_blank" class="mobile-nav-wa">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Solicitar Orçamento
+    </a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Início</a>
+      <span>/</span>
+      <span>Contato</span>
+    </div>
+    <div class="section-label">Fale Conosco</div>
+    <h1 class="section-title" style="font-size:clamp(2.5rem,5vw,4rem); max-width:700px;">
+      Vamos criar seu<br><span>projeto juntos?</span>
+    </h1>
+    <p class="section-desc">Solicite um orçamento gratuito. Nossa equipe está pronta para atendê-lo com agilidade e dedicação.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- INFO CARDS -->
+      <div class="contact-info">
+        <div class="fade-in">
+          <div class="section-label">Canais de Atendimento</div>
+          <h2 style="font-size:1.6rem; font-weight:700; margin-bottom:8px;">Como nos<br><span style="color:var(--accent)">encontrar</span></h2>
+          <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.7; margin-bottom:28px;">Atendemos de segunda a sábado, das 10h às 19h. Aos domingos e feriados, por agendamento. Escolha o canal que preferir.</p>
+        </div>
+
+        <a href="https://wa.me/5511934431311" target="_blank" class="contact-card fade-in" style="text-decoration:none; display:flex; cursor:pointer;">
+          <div class="contact-card-icon" style="background:rgba(37,211,102,0.1); border-color:rgba(37,211,102,0.2); color:#25D366;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <div>
+            <div class="contact-card-label">WhatsApp Principal</div>
+            <div class="contact-card-value">(11) 93443-1311</div>
+            <div class="contact-card-sub">Resposta imediata — Clique para chamar</div>
+          </div>
+        </a>
+
+        <a href="https://wa.me/5511937551187" target="_blank" class="contact-card fade-in" style="text-decoration:none; display:flex; cursor:pointer;">
+          <div class="contact-card-icon" style="background:rgba(37,211,102,0.1); border-color:rgba(37,211,102,0.2); color:#25D366;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <div>
+            <div class="contact-card-label">WhatsApp Secundário</div>
+            <div class="contact-card-value">(11) 93755-1187</div>
+            <div class="contact-card-sub">Atendimento comercial — Clique para chamar</div>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/gm_mobille" target="_blank" class="contact-card fade-in" style="text-decoration:none; display:flex; cursor:pointer;">
+          <div class="contact-card-icon" style="background:rgba(225,48,108,0.1); border-color:rgba(225,48,108,0.2); color:#E1306C;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+          <div>
+            <div class="contact-card-label">Instagram</div>
+            <div class="contact-card-value">@gm_mobille</div>
+            <div class="contact-card-sub">Veja nossas últimas obras e novidades</div>
+          </div>
+        </a>
+
+        <a href="mailto:gm.mobilleplanejados@gmail.com" class="contact-card fade-in" style="text-decoration:none; display:flex; cursor:pointer;">
+          <div class="contact-card-icon" style="background:rgba(196,162,74,0.1); border-color:rgba(196,162,74,0.2); color:var(--accent);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <div class="contact-card-label">E-mail</div>
+            <div class="contact-card-value">gm.mobilleplanejados@gmail.com</div>
+            <div class="contact-card-sub">Envie sua mensagem — respondemos em breve</div>
+          </div>
+        </a>
+
+        <div class="contact-card fade-in">
+          <div class="contact-card-icon">◎</div>
+          <div>
+            <div class="contact-card-label">Localização</div>
+            <div class="contact-card-value">Rua Guaraúna, 70 — Jd. Layr<br>Mogi das Cruzes, SP</div>
+            <div class="contact-card-sub">Grande São Paulo — atendemos toda a região</div>
+          </div>
+        </div>
+
+        <div class="contact-card fade-in">
+          <div class="contact-card-icon">◷</div>
+          <div>
+            <div class="contact-card-label">Horário de Atendimento</div>
+            <div class="contact-card-value">Seg – Sáb: 10h às 19h</div>
+            <div class="contact-card-sub">Dom e Feriados: horário agendado</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form-box fade-in">
+        <h2 class="contact-form-title">Solicite seu <span style="color:var(--accent)">Orçamento Gratuito</span></h2>
+        <p class="contact-form-sub">Preencha o formulário e entraremos em contato em até 24 horas. Sem compromisso!</p>
+        <form id="contactForm" action="https://formspree.io/f/mgobreqq" method="POST">
+          <input type="hidden" name="_subject" value="Novo Orçamento — GM Móbile">
+          <input type="hidden" name="_language" value="pt">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Nome Completo *</label>
+              <input type="text" name="nome" class="form-input" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">WhatsApp / Telefone *</label>
+              <input type="tel" name="whatsapp" class="form-input" placeholder="(11) 99999-9999" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">E-mail</label>
+            <input type="email" name="email" class="form-input" placeholder="seu@email.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tipo de Projeto *</label>
+            <select name="tipo_projeto" class="form-select" required>
+              <option value="">Selecione o ambiente...</option>
+              <option>Cozinha Planejada</option>
+              <option>Sala de Estar</option>
+              <option>Quarto / Dormitório</option>
+              <option>Closet</option>
+              <option>Escritório / Home Office</option>
+              <option>Projeto Completo (múltiplos ambientes)</option>
+              <option>Projeto Especial / Personalizado</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Cidade</label>
+              <input type="text" name="cidade" class="form-input" placeholder="Sua cidade">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Previsão</label>
+              <select name="previsao" class="form-select">
+                <option>Imediato</option>
+                <option>1 a 3 meses</option>
+                <option>3 a 6 meses</option>
+                <option>Mais de 6 meses</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mensagem / Descrição do Projeto</label>
+            <textarea name="mensagem" class="form-textarea" placeholder="Descreva seu projeto, dimensões do espaço, estilo que deseja, dúvidas... Quanto mais detalhes, melhor!"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" id="formSubmitBtn">
+            Enviar Solicitação de Orçamento →
+          </button>
+          <p style="font-size:0.78rem; color:var(--text-muted); margin-top:12px; text-align:center;">
+            Suas informações são 100% seguras e não serão compartilhadas com terceiros.
+          </p>
+          <!-- Mensagem de sucesso (oculta por padrão) -->
+          <div id="formSuccess" style="display:none; margin-top:20px; padding:20px 24px; background:rgba(196,162,74,0.1); border:1px solid rgba(196,162,74,0.3); border-radius:var(--radius-lg); text-align:center;">
+            <div style="font-size:2rem; margin-bottom:8px;">✓</div>
+            <div style="font-weight:700; color:var(--accent); margin-bottom:6px;">Solicitação enviada com sucesso!</div>
+            <div style="font-size:0.88rem; color:var(--text-secondary);">Entraremos em contato em até 24 horas. Obrigado pelo interesse!</div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="map-box fade-in">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58940.33374048765!2d-46.21697499999999!3d-23.5224044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce692b7a7d8db9%3A0x1e73d87d06f024c6!2sMogi%20das%20Cruzes%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1698000000000!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background:var(--bg-secondary); border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="max-width:800px; margin:0 auto;">
+      <div class="section-header fade-in" style="text-align:center;">
+        <div class="section-label" style="justify-content:center;">Dúvidas Frequentes</div>
+        <h2 class="section-title">Perguntas<br><span>frequentes</span></h2>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <details class="fade-in" style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden;">
+          <summary style="padding:24px 28px; cursor:pointer; font-weight:700; font-size:1rem; list-style:none; display:flex; justify-content:space-between; align-items:center; user-select:none;">
+            Quanto tempo leva para entregar um projeto de móveis planejados?
+            <span style="color:var(--accent); font-size:1.2rem;">+</span>
+          </summary>
+          <div style="padding:0 28px 24px; color:var(--text-secondary); line-height:1.8; font-size:0.92rem;">
+            O prazo de entrega varia conforme o tamanho e a complexidade do projeto. Em média, após a aprovação do projeto, o prazo de produção é de 20 a 40 dias úteis. A instalação é agendada assim que os móveis ficam prontos.
+          </div>
+        </details>
+        <details class="fade-in" style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden;">
+          <summary style="padding:24px 28px; cursor:pointer; font-weight:700; font-size:1rem; list-style:none; display:flex; justify-content:space-between; align-items:center; user-select:none;">
+            A GM Móbile atende fora de Mogi das Cruzes?
+            <span style="color:var(--accent); font-size:1.2rem;">+</span>
+          </summary>
+          <div style="padding:0 28px 24px; color:var(--text-secondary); line-height:1.8; font-size:0.92rem;">
+            Sim! Atendemos toda a Grande São Paulo e região, incluindo Suzano, Poá, Guararema, Salesópolis, Ribeirão Pires, Santo André, São Bernardo e outras cidades próximas. Entre em contato para verificar disponibilidade na sua região.
+          </div>
+        </details>
+        <details class="fade-in" style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden;">
+          <summary style="padding:24px 28px; cursor:pointer; font-weight:700; font-size:1rem; list-style:none; display:flex; justify-content:space-between; align-items:center; user-select:none;">
+            O orçamento é realmente gratuito?
+            <span style="color:var(--accent); font-size:1.2rem;">+</span>
+          </summary>
+          <div style="padding:0 28px 24px; color:var(--text-secondary); line-height:1.8; font-size:0.92rem;">
+            Sim, 100% gratuito e sem compromisso! Realizamos a visita técnica, medição do ambiente e elaboramos o projeto com renderização 3D sem nenhum custo. O orçamento é apresentado de forma clara e transparente.
+          </div>
+        </details>
+        <details class="fade-in" style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden;">
+          <summary style="padding:24px 28px; cursor:pointer; font-weight:700; font-size:1rem; list-style:none; display:flex; justify-content:space-between; align-items:center; user-select:none;">
+            Quais formas de pagamento são aceitas?
+            <span style="color:var(--accent); font-size:1.2rem;">+</span>
+          </summary>
+          <div style="padding:0 28px 24px; color:var(--text-secondary); line-height:1.8; font-size:0.92rem;">
+            Aceitamos as seguintes formas de pagamento: <strong style="color:var(--text-primary);">Boleto bancário, Cartão de crédito e débito, PIX e Dinheiro (espécie)</strong>. As condições são negociadas conforme o projeto e discutidas no momento do orçamento.
+          </div>
+        </details>
+        <details class="fade-in" style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden;">
+          <summary style="padding:24px 28px; cursor:pointer; font-weight:700; font-size:1rem; list-style:none; display:flex; justify-content:space-between; align-items:center; user-select:none;">
+            Os móveis têm garantia?
+            <span style="color:var(--accent); font-size:1.2rem;">+</span>
+          </summary>
+          <div style="padding:0 28px 24px; color:var(--text-secondary); line-height:1.8; font-size:0.92rem;">
+            Sim! Todos os nossos produtos possuem garantia. Trabalhamos com materiais e ferragens de marcas reconhecidas no mercado, e oferecemos suporte pós-instalação para garantir sua satisfação a longo prazo.
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-logo">
+          <img src="images/logo.png" alt="GM Móbile" class="footer-logo-img">
+          <div><div class="footer-brand-name">GM MÓBILE</div><div class="footer-brand-sub">Planejados</div></div>
+        </div>
+        <p class="footer-desc">Móveis planejados sob medida com design, funcionalidade e sofisticação. Transformamos visão em realidade — Mogi das Cruzes, São Paulo.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/gm_mobille" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://wa.me/5511934431311" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          <a href="tel:+5511937551187" title="Telefone"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegação</div>
+        <ul class="footer-links">
+          <li><a href="index.html">→ Início</a></li>
+          <li><a href="sobre.html">→ Sobre Nós</a></li>
+          <li><a href="projetos.html">→ Projetos</a></li>
+          <li><a href="blog.html">→ Blog</a></li>
+          <li><a href="parceiros.html">→ Parceiros</a></li>
+          <li><a href="contato.html">→ Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Serviços</div>
+        <ul class="footer-links">
+          <li><a href="projetos.html">→ Salas de Estar</a></li>
+          <li><a href="projetos.html">→ Cozinhas</a></li>
+          <li><a href="projetos.html">→ Quartos</a></li>
+          <li><a href="projetos.html">→ Closets</a></li>
+          <li><a href="projetos.html">→ Escritórios</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato Rápido</div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">◎</div>
+          <div><div class="footer-contact-label">Localização</div><div class="footer-contact-value">Rua Guaraúna, 70 — Jd. Layr, Mogi das Cruzes, SP</div></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+          <div><div class="footer-contact-label">WhatsApp</div><div class="footer-contact-value">(11) 93443-1311</div></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg></div>
+          <div><div class="footer-contact-label">Telefone</div><div class="footer-contact-value">(11) 93755-1187</div></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+          <div><div class="footer-contact-label">Instagram</div><div class="footer-contact-value">@gm_mobille</div></div>
+        </div>
+        <a href="mailto:gm.mobilleplanejados@gmail.com" class="footer-contact-item" style="text-decoration:none; color:inherit;">
+          <div class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+          <div>
+            <div class="footer-contact-label">E-mail</div>
+            <div class="footer-contact-value">gm.mobilleplanejados@gmail.com</div>
+          </div>
+        </a>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">◷</div>
+          <div>
+            <div class="footer-contact-label">Horário</div>
+            <div class="footer-contact-value">Seg – Sáb: 10h às 19h</div>
+            <div style="font-size:0.78rem; color:var(--text-muted); margin-top:2px;">Dom e Feriados: agendado</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 <span>GM Móbile</span>. Todos os direitos reservados. &nbsp;·&nbsp; Desenvolvido por <a href="https://g2genesys.com/" target="_blank" style="color:var(--accent); transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">G2 Genesys</a></div>
+      <div class="footer-bottom-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5511934431311?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" class="float-wa">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#0E0E10"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script src="js/main.js"></script>
+<script>
+  const form = document.getElementById('contactForm');
+  const successMsg = document.getElementById('formSuccess');
+  const submitBtn = document.getElementById('formSubmitBtn');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.reset();
+      submitBtn.style.display = 'none';
+      successMsg.style.display = 'block';
+      successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Enviar Solicitação de Orçamento →';
+      alert('Erro ao enviar. Tente novamente ou nos chame no WhatsApp.');
+    }
+  });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

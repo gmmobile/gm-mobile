@@ -1,0 +1,658 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GM Móbile | Móveis Planejados — Mogi das Cruzes, SP</title>
+  <meta name="description" content="GM Móbile: móveis planejados sob medida com design, funcionalidade e sofisticação. Salas, cozinhas, quartos, closets e escritórios em Mogi das Cruzes - SP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260613">
+  <style>
+    @media (max-width: 640px) {
+      /* Darken hero background more on mobile so text pops */
+      .hero-bg {
+        background:
+          linear-gradient(180deg, rgba(8,8,10,0.82) 0%, rgba(8,8,10,0.42) 45%, rgba(8,8,10,0.9) 100%),
+          url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80') center/cover no-repeat;
+      }
+
+      /* Title: stronger shadow + outline more visible */
+      .hero-title {
+        text-shadow: 0 2px 24px rgba(0,0,0,0.9), 0 1px 6px rgba(0,0,0,0.7);
+      }
+      .hero-title .line-accent {
+        text-shadow: 0 0 32px rgba(196,162,74,0.4), 0 2px 12px rgba(0,0,0,0.8);
+      }
+      .hero-title .line-outline {
+        -webkit-text-stroke: 1.5px rgba(196,162,74,0.65);
+        color: transparent;
+        text-shadow: none;
+      }
+
+      /* Subtitle: brighter, stronger contrast */
+      .hero-subtitle {
+        color: rgba(255,255,255,0.82) !important;
+        text-shadow: 0 1px 10px rgba(0,0,0,0.7);
+        font-size: 0.86rem;
+      }
+
+      /* Buttons: side by side, compact */
+      .hero-actions {
+        flex-direction: row !important;
+        gap: 10px !important;
+        margin-bottom: 28px !important;
+      }
+      .hero-actions .btn {
+        flex: 1;
+        justify-content: center;
+        text-align: center;
+        padding: 13px 10px;
+        font-size: 0.78rem;
+        white-space: nowrap;
+      }
+      .hero-actions .btn-primary { flex: 0 0 auto; padding: 13px 18px; }
+      .hero-actions .btn-outline  { flex: 0 0 auto; padding: 13px 16px; }
+      .hero-actions .btn svg { width: 15px; height: 15px; flex-shrink: 0; }
+    }
+    @media (max-width: 380px) {
+      .hero-title { font-size: 2.2rem !important; }
+      .hero-actions .btn { font-size: 0.74rem !important; padding: 12px 12px !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="GM Móbile" class="nav-logo-img">
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">GM MÓBILE</span>
+          <span class="nav-logo-sub">Planejados</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Início</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+        <li><a href="projetos.html" class="nav-link">Projetos</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="parceiros.html" class="nav-link">Parceiros</a></li>
+        <li><a href="materiais.html" class="nav-link">Materiais</a></li>
+        <li><a href="contato.html" class="nav-link">Contato</a></li>
+      </ul>
+      <a href="https://wa.me/5511934431311" target="_blank" class="nav-cta">Orçamento Grátis</a>
+      <button class="nav-menu-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV BACKDROP -->
+<div class="mobile-nav-backdrop"></div>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-brand">
+      <img src="images/logo.png" alt="GM Móbile" class="mobile-nav-logo-img">
+      <div>
+        <div class="mobile-nav-brand-name">GM MÓBILE</div>
+        <div class="mobile-nav-brand-sub">Móveis Planejados</div>
+      </div>
+    </a>
+    <button class="mobile-nav-close" aria-label="Fechar menu">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="1" y1="1" x2="13" y2="13"/><line x1="13" y1="1" x2="1" y2="13"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav-links">
+    <a href="index.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">01</span>
+      <span class="mobile-nav-text">Início</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <a href="sobre.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">02</span>
+      <span class="mobile-nav-text">Sobre Nós</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <a href="projetos.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">03</span>
+      <span class="mobile-nav-text">Projetos</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <a href="blog.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">04</span>
+      <span class="mobile-nav-text">Blog</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <a href="parceiros.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">05</span>
+      <span class="mobile-nav-text">Parceiros</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <a href="materiais.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">06</span>
+      <span class="mobile-nav-text">Materiais</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <a href="contato.html" class="mobile-nav-link">
+      <span class="mobile-nav-num">07</span>
+      <span class="mobile-nav-text">Contato</span>
+      <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+  </nav>
+  <div class="mobile-nav-footer">
+    <div class="mobile-nav-contact">
+      <div class="mobile-nav-contact-item">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Mogi das Cruzes, SP
+      </div>
+      <div class="mobile-nav-contact-item">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        (11) 93443-1311
+      </div>
+    </div>
+    <a href="https://wa.me/5511934431311" target="_blank" class="mobile-nav-wa">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Solicitar Orçamento
+    </a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot">★</span>
+        Móveis Planejados Sob Medida
+      </div>
+      <h1 class="hero-title">
+        Design que<br>
+        <span class="line-accent">transforma</span><br>
+        <span class="line-outline">ambientes</span>
+      </h1>
+      <p class="hero-subtitle">
+        Na GM Móbile, criamos móveis planejados com sofisticação, funcionalidade e qualidade premium. Seu projeto, do conceito à entrega — com pontualidade e dedicação.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5511934431311" target="_blank" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Solicitar Orçamento
+        </a>
+        <a href="projetos.html" class="btn btn-outline">
+          Ver Projetos →
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-number" data-count="500" data-suffix="+">0</div>
+          <div class="hero-stat-label">Projetos Entregues</div>
+        </div>
+        <div>
+          <div class="hero-stat-number" data-count="11" data-suffix=" anos">0</div>
+          <div class="hero-stat-label">De Experiência</div>
+        </div>
+        <div>
+          <div class="hero-stat-number" data-count="100" data-suffix="%">0</div>
+          <div class="hero-stat-label">Satisfação</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- MARQUEE BAR -->
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <div class="marquee-item">◆ <span>Salas de Estar</span></div>
+    <div class="marquee-item">◆ <span>Cozinhas Planejadas</span></div>
+    <div class="marquee-item">◆ <span>Quartos Completos</span></div>
+    <div class="marquee-item">◆ <span>Closets</span></div>
+    <div class="marquee-item">◆ <span>Escritórios</span></div>
+    <div class="marquee-item">◆ <span>Qualidade Premium</span></div>
+    <div class="marquee-item">◆ <span>Projetos Personalizados</span></div>
+    <div class="marquee-item">◆ <span>Entrega Pontual</span></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section" id="servicos">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Nossos Serviços</div>
+      <h2 class="section-title">Soluções para cada<br><span>ambiente da sua casa</span></h2>
+      <p class="section-desc">Projetamos e executamos móveis planejados sob medida para todos os ambientes, com materiais de alta qualidade e acabamento impecável.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-icon">◆</div>
+        <h3 class="service-title">Salas de Estar</h3>
+        <p class="service-desc">Painéis de TV, racks, estantes e home theaters planejados para transformar sua sala em um espaço único e aconchegante.</p>
+        <a href="projetos.html?cat=salas" class="service-link">Ver projetos <span>→</span></a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">◆</div>
+        <h3 class="service-title">Cozinhas</h3>
+        <p class="service-desc">Cozinhas funcionais e sofisticadas com armários inteligentes, despensa planejada e aproveitamento máximo do espaço disponível.</p>
+        <a href="projetos.html?cat=cozinhas" class="service-link">Ver projetos <span>→</span></a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">◆</div>
+        <h3 class="service-title">Quartos</h3>
+        <p class="service-desc">Dormitórios completos com guarda-roupas, cabeceiras, cômodas e painéis que criam ambientes de descanso perfeitos.</p>
+        <a href="projetos.html?cat=quartos" class="service-link">Ver projetos <span>→</span></a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">◆</div>
+        <h3 class="service-title">Closets</h3>
+        <p class="service-desc">Closets organizados e elegantes que otimizam o espaço e oferecem praticidade no dia a dia com estilo e sofisticação.</p>
+        <a href="projetos.html?cat=closets" class="service-link">Ver projetos <span>→</span></a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">◆</div>
+        <h3 class="service-title">Escritórios</h3>
+        <p class="service-desc">Home offices e escritórios corporativos com móveis sob medida que unem produtividade, organização e design profissional.</p>
+        <a href="projetos.html?cat=escritorios" class="service-link">Ver projetos <span>→</span></a>
+      </div>
+      <div class="service-card fade-in" style="background: linear-gradient(135deg, rgba(196,162,74,0.1), rgba(196,162,74,0.03)); border-color: rgba(196,162,74,0.3);">
+        <div class="service-icon" style="background: var(--accent); border-color: var(--accent);">◆</div>
+        <h3 class="service-title">Projeto Personalizado</h3>
+        <p class="service-desc">Tem um ambiente diferente? Desenvolvemos projetos exclusivos para qualquer espaço, sempre com atenção aos detalhes e às suas necessidades.</p>
+        <a href="contato.html" class="service-link" style="color: var(--accent-light);">Fale conosco <span>→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT TEASER -->
+<section class="section" style="background: var(--bg-secondary); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-images fade-in">
+        <img class="about-img-main" src="images/Missão turismo.png" alt="GM Móbile — Missão e Visão" loading="lazy">
+        <img class="about-img-float" src="images/Sala moderna com decoração elegante e aconchegante.png" alt="GM Móbile — Sala Planejada" loading="lazy">
+        <div class="about-badge">Desde 2015</div>
+      </div>
+      <div class="about-content fade-in">
+        <div class="section-label">Sobre a GM Móbile</div>
+        <h2 class="section-title">Missão sem visão<br><span>é turismo.</span></h2>
+        <p class="section-desc">Somos uma empresa de móveis planejados localizada em Mogi das Cruzes - SP, com anos de experiência transformando ambientes em experiências únicas. Cada projeto é tratado com dedicação e excelência do início ao fim.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon">◆</div>
+            <div>
+              <div class="about-feature-title">Projetos Personalizados</div>
+              <div class="about-feature-desc">Cada projeto é único, desenvolvido especificamente para o seu espaço e necessidades.</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">◆</div>
+            <div>
+              <div class="about-feature-title">Qualidade Premium</div>
+              <div class="about-feature-desc">Utilizamos apenas materiais e ferragens de alta linha para garantir durabilidade e elegância.</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">◆</div>
+            <div>
+              <div class="about-feature-title">Pontualidade na Entrega</div>
+              <div class="about-feature-desc">Comprometidos com prazos e com a satisfação total dos nossos clientes.</div>
+            </div>
+          </div>
+        </div>
+        <a href="sobre.html" class="btn btn-outline">Conheça Nossa História →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header fade-in" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">Como Funciona</div>
+      <h2 class="section-title">Do sonho ao ambiente<br><span>em 5 etapas</span></h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step fade-in">
+        <div class="process-num">01</div>
+        <h4 class="process-title">Contato</h4>
+        <p class="process-desc">Você entra em contato pelo WhatsApp ou pelo nosso site para dar o primeiro passo.</p>
+      </div>
+      <div class="process-step fade-in">
+        <div class="process-num">02</div>
+        <h4 class="process-title">Visita à Nossa Loja</h4>
+        <p class="process-desc">Você visita nosso showroom para conhecer materiais, acabamentos e tirar todas as dúvidas.</p>
+      </div>
+      <div class="process-step fade-in">
+        <div class="process-num">03</div>
+        <h4 class="process-title">Fechamento do Projeto</h4>
+        <p class="process-desc">Alinhamos todos os detalhes do projeto — estilo, materiais, prazo e investimento — e formalizamos o contrato.</p>
+      </div>
+      <div class="process-step fade-in">
+        <div class="process-num">04</div>
+        <h4 class="process-title">Visita Técnica</h4>
+        <p class="process-desc">Nosso especialista vai até o seu ambiente para realizar as medições precisas e garantir o encaixe perfeito.</p>
+      </div>
+      <div class="process-step fade-in">
+        <div class="process-num">05</div>
+        <h4 class="process-title">Montagem</h4>
+        <p class="process-desc">Nossa equipe realiza a instalação no prazo acordado, com acabamento impecável e total cuidado com o seu espaço.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="fade-in">
+        <div class="stat-number" data-count="500" data-suffix="+">0+</div>
+        <div class="stat-label">Projetos Realizados</div>
+      </div>
+      <div class="fade-in">
+        <div class="stat-number" data-count="11" data-suffix="">0</div>
+        <div class="stat-label">Anos de Experiência</div>
+      </div>
+      <div class="fade-in">
+        <div class="stat-number" data-count="350" data-suffix="+">0+</div>
+        <div class="stat-label">Clientes Satisfeitos</div>
+      </div>
+      <div class="fade-in">
+        <div class="stat-number" data-count="5" data-suffix="">0</div>
+        <div class="stat-label">Tipos de Ambiente</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section why-section">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label">Por que nos escolher</div>
+      <h2 class="section-title">Nossos<br><span>diferenciais</span></h2>
+      <p class="section-desc">Valorizamos cada detalhe para que seu projeto seja uma experiência inesquecível.</p>
+    </div>
+    <div class="why-grid fade-in">
+      <div class="why-card">
+        <div class="why-icon">◆</div>
+        <h4 class="why-title">Design Exclusivo</h4>
+        <p class="why-desc">Cada projeto é único, criado especialmente para o seu perfil, gosto e estilo de vida.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">◆</div>
+        <h4 class="why-title">Ferragens de Alta Linha</h4>
+        <p class="why-desc">Utilizamos ferragens e acessórios das melhores marcas do mercado, com garantia de qualidade.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">▸</div>
+        <h4 class="why-title">Prazo Garantido</h4>
+        <p class="why-desc">Cumprimos prazos. Sua entrega é agendada e respeitada com total responsabilidade.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">◆</div>
+        <h4 class="why-title">Atendimento Personalizado</h4>
+        <p class="why-desc">Acompanhamento desde o primeiro contato até a instalação final, com suporte total.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS PREVIEW -->
+<section class="section">
+  <div class="container">
+    <div class="section-header fade-in" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:20px;">
+      <div>
+        <div class="section-label">Portfólio</div>
+        <h2 class="section-title">Projetos que<br><span>inspiram</span></h2>
+      </div>
+      <a href="projetos.html" class="btn btn-outline">Ver todos →</a>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card fade-in">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80" alt="Cozinha Planejada Moderna" loading="lazy">
+        <div class="project-overlay">
+          <div class="project-cat">Cozinha</div>
+          <div class="project-name">Cozinha Moderna Minimalista</div>
+        </div>
+      </div>
+      <div class="project-card fade-in">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80" alt="Sala de Estar Planejada" loading="lazy">
+        <div class="project-overlay">
+          <div class="project-cat">Sala</div>
+          <div class="project-name">Sala Contemporânea</div>
+        </div>
+      </div>
+      <div class="project-card fade-in">
+        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80" alt="Quarto Planejado" loading="lazy">
+        <div class="project-overlay">
+          <div class="project-cat">Quarto</div>
+          <div class="project-name">Master Bedroom Luxo</div>
+        </div>
+      </div>
+      <div class="project-card fade-in">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Closet Planejado" loading="lazy">
+        <div class="project-overlay">
+          <div class="project-cat">Closet</div>
+          <div class="project-name">Closet Feminino Sofisticado</div>
+        </div>
+      </div>
+      <div class="project-card fade-in">
+        <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80" alt="Escritório Planejado" loading="lazy">
+        <div class="project-overlay">
+          <div class="project-cat">Escritório</div>
+          <div class="project-name">Home Office Premium</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials-section">
+  <div class="container">
+    <div class="section-header fade-in" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">Depoimentos</div>
+      <h2 class="section-title">O que nossos <span>clientes dizem</span></h2>
+      <p class="section-desc" style="margin: 0 auto;">A satisfação de cada cliente é nossa maior conquista. Veja o que eles falam sobre a GM Móbile.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">Ficamos encantados com o resultado! A cozinha planejada superou todas as expectativas. O atendimento foi impecável do início ao fim e o prazo foi cumprido à risca.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MA</div>
+          <div>
+            <div class="testimonial-name">Maria Aparecida S.</div>
+            <div class="testimonial-loc">◎ Mogi das Cruzes, SP</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">O closet ficou exatamente como eu havia sonhado. A equipe da GM Móbile é extremamente profissional e o acabamento dos móveis é de altíssima qualidade. Indico para todos!</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JP</div>
+          <div>
+            <div class="testimonial-name">Juliana Pereira</div>
+            <div class="testimonial-loc">◎ Suzano, SP</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">Reformamos todo o apartamento com a GM Móbile. Salas, quartos e banheiro. Resultado incrível, material premium e equipe super atenciosa. Com certeza voltarei a contratar!</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">RF</div>
+          <div>
+            <div class="testimonial-name">Roberto Fernandes</div>
+            <div class="testimonial-loc">◎ Poá, SP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label" style="justify-content:center;">Pronto para começar?</div>
+      <h2 class="section-title">Transforme seu ambiente<br><span>agora mesmo</span></h2>
+      <p class="section-desc">Entre em contato e solicite seu orçamento gratuito. Nossa equipe está pronta para criar o projeto dos seus sonhos.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/5511934431311?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20móveis%20planejados." target="_blank" class="whatsapp-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp: (11) 93443-1311
+        </a>
+        <a href="contato.html" class="btn btn-outline">Formulário de Contato</a>
+        <a href="tel:+5511937551187" class="btn btn-ghost"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg> (11) 93755-1187</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-logo">
+          <img src="images/logo.png" alt="GM Móbile" class="footer-logo-img">
+          <div>
+            <div class="footer-brand-name">GM MÓBILE</div>
+            <div class="footer-brand-sub">Planejados</div>
+          </div>
+        </div>
+        <p class="footer-desc">Móveis planejados sob medida com design, funcionalidade e sofisticação. Transformamos visão em realidade — desde 2015, em Mogi das Cruzes, São Paulo.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/gm_mobille" target="_blank" title="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://wa.me/5511934431311" target="_blank" title="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          <a href="tel:+5511937551187" title="Telefone"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegação</div>
+        <ul class="footer-links">
+          <li><a href="index.html">→ Início</a></li>
+          <li><a href="sobre.html">→ Sobre Nós</a></li>
+          <li><a href="projetos.html">→ Projetos</a></li>
+          <li><a href="blog.html">→ Blog</a></li>
+          <li><a href="parceiros.html">→ Parceiros</a></li>
+          <li><a href="contato.html">→ Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Serviços</div>
+        <ul class="footer-links">
+          <li><a href="projetos.html">→ Salas de Estar</a></li>
+          <li><a href="projetos.html">→ Cozinhas</a></li>
+          <li><a href="projetos.html">→ Quartos</a></li>
+          <li><a href="projetos.html">→ Closets</a></li>
+          <li><a href="projetos.html">→ Escritórios</a></li>
+          <li><a href="contato.html">→ Projetos Especiais</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">◎</div>
+          <div>
+            <div class="footer-contact-label">Localização</div>
+            <div class="footer-contact-value">Rua Guaraúna, 70 — Jd. Layr<br>Mogi das Cruzes, SP</div>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+          <div>
+            <div class="footer-contact-label">WhatsApp</div>
+            <div class="footer-contact-value">(11) 93443-1311</div>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg></div>
+          <div>
+            <div class="footer-contact-label">Telefone</div>
+            <div class="footer-contact-value">(11) 93755-1187</div>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+          <div>
+            <div class="footer-contact-label">Instagram</div>
+            <div class="footer-contact-value">@gm_mobille</div>
+          </div>
+        </div>
+        <a href="mailto:gm.mobilleplanejados@gmail.com" class="footer-contact-item" style="text-decoration:none; color:inherit;">
+          <div class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+          <div>
+            <div class="footer-contact-label">E-mail</div>
+            <div class="footer-contact-value">gm.mobilleplanejados@gmail.com</div>
+          </div>
+        </a>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">◷</div>
+          <div>
+            <div class="footer-contact-label">Horário</div>
+            <div class="footer-contact-value">Seg – Sáb: 10h às 19h</div>
+            <div style="font-size:0.78rem; color:var(--text-muted); margin-top:2px;">Dom e Feriados: agendado</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 <span>GM Móbile</span>. Todos os direitos reservados. &nbsp;·&nbsp; Desenvolvido por <a href="https://g2genesys.com/" target="_blank" style="color:var(--accent); transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">G2 Genesys</a></div>
+      <div class="footer-bottom-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/5511934431311?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" class="float-wa" title="Fale conosco no WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#0E0E10"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
