@@ -26,6 +26,11 @@
       .contact-info > .fade-in:first-child { grid-column: 1 / -1; }
       .contact-card { align-items: flex-start; }
     }
+    @media (max-width: 480px) {
+      .contact-info {
+        grid-template-columns: 1fr !important;
+      }
+    }
 
     /* Map: shorter on mobile */
     @media (max-width: 768px) {
