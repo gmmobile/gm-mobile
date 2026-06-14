@@ -1806,6 +1806,12 @@ html, body { overflow-x: hidden; }
   /* Navbar */
   .nav-links, .nav-cta { display: none; }
   .nav-menu-btn { display: flex; }
+  .navbar {
+    background: rgba(26,26,28,0.96);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
 
   /* Section titles */
   .section-title { font-size: clamp(1.5rem, 5vw, 2.2rem); }
