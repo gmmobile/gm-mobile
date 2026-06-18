@@ -1922,6 +1922,7 @@ html, body { overflow-x: hidden; }
   /* Ferragens mobile */
   .ferragens-grid { grid-template-columns: 1fr 1fr !important; gap: 14px !important; }
   .ferragens-grid > div > div:first-child { height: 150px !important; overflow: hidden !important; }
+  .ferragens-grid > div > .card-img-full { height: auto !important; }
   .ferragens-grid > div > div:last-child { padding: 14px !important; }
   .ferragens-grid h4 { font-size: 0.88rem !important; }
   .ferragens-grid p { font-size: 0.78rem !important; line-height: 1.5 !important; }
@@ -2080,6 +2081,7 @@ html, body { overflow-x: hidden; }
   /* Ferragens */
   .ferragens-grid { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
   .ferragens-grid > div > div:first-child { height: 120px !important; overflow: hidden !important; }
+  .ferragens-grid > div > .card-img-full { height: auto !important; }
   .ferragens-grid > div > div:last-child { padding: 10px !important; }
   .ferragens-grid h4 { font-size: 0.8rem !important; margin-bottom: 4px !important; }
   .ferragens-grid p { font-size: 0.72rem !important; line-height: 1.4 !important; }
