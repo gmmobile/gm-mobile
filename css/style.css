@@ -1924,6 +1924,7 @@ html, body { overflow-x: hidden; }
   .ferragens-grid > div > div:first-child { height: 150px !important; overflow: hidden !important; }
   .ferragens-grid > div > .card-img-full { height: auto !important; }
   .ferragens-grid > div > div:last-child { padding: 14px !important; }
+  .hide-mobile { display: none; }
   .ferragens-grid h4 { font-size: 0.88rem !important; }
   .ferragens-grid p { font-size: 0.78rem !important; line-height: 1.5 !important; }
 
