@@ -48,6 +48,18 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
+// ===== COMPANY AGE (fundada em 13/12/2012, atualiza automaticamente todo ano) =====
+(function() {
+  const today = new Date();
+  const anniversary = new Date(today.getFullYear(), 11, 13); // 13 de dezembro
+  let years = today.getFullYear() - 2012;
+  if (today < anniversary) years--;
+  document.querySelectorAll('[data-company-age]').forEach(el => {
+    el.dataset.count = years;
+    el.textContent = years;
+  });
+})();
+
 // ===== COUNTER ANIMATION =====
 function animateCount(el) {
   const target = parseInt(el.dataset.count);
