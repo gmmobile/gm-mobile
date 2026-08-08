@@ -56,7 +56,8 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   if (today < anniversary) years--;
   document.querySelectorAll('[data-company-age]').forEach(el => {
     el.dataset.count = years;
-    el.textContent = years;
+    const suffix = el.dataset.suffix || '';
+    el.textContent = years + suffix;
   });
 })();
 
