@@ -763,6 +763,26 @@ body.nav-open { overflow: hidden; }
   color: var(--text-secondary);
   line-height: 1.6;
 }
+.limpeza-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px 40px;
+  margin-top: 32px;
+  padding: 24px 32px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+}
+.limpeza-footer-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+.limpeza-footer-item p { margin: 0; }
 
 /* ===== PROCESS ===== */
 .process-steps {
@@ -1773,6 +1793,7 @@ html, body { overflow-x: hidden; }
   .about-img-float { right: -10px; bottom: -20px; width: 52%; aspect-ratio: 3/4; }
   .about-badge { left: 10px; }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .limpeza-footer { flex-direction: column; padding: 20px; }
   .process-steps { grid-template-columns: repeat(3, 1fr); gap: 32px; }
   .process-steps::before { display: none; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
